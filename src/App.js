@@ -3,7 +3,7 @@ import {BrowserRouter,Navigate,Route,Routes} from 'react-router-dom';
 import UseReducer from './hooks/UseReducer';
 import UseState from './hooks/UseState';
 import Async from './jscode/AsyncCode';
-
+import PromiseCode from './jscode/PromiseCode';
 
 function App() {
   return (
@@ -17,6 +17,8 @@ function App() {
         
         {/* js */}
         <Route path='/async' element={<Async/>}/>
+        <Route path='/promise' element={<PromiseCode/>}/>
+
       </Routes>
   </BrowserRouter>
   </>
